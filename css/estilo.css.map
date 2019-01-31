@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,OAAO;EACN,KAAK,EAHC,IAAI;;;AAMX,IAAI;EACH,OAAO,EAAE,IAAI;EACb,gBAAgB,EAAE,OAAO;EACzB,aAAa,EAAE,GAAG;EAClB,aAAa,EAAE,IAAI;;AAEnB,UAAK;EACJ,aAAa,EAAE,iBAAiB;EAChC,cAAc,EAAE,IAAI;;AAEpB,aAAE;EACD,MAAM,EAAE,CAAC;EACT,KAAK,EAAE,OAAO;;AAIhB,UAAK;EACJ,WAAW,EAAE,IAAI",
+"sources": ["../scss/saludo.scss"],
+"names": [],
+"file": "estilo.css"
+}
