@@ -1,0 +1,68 @@
+$if1: 30;
+
+@if $if1 == 1{
+	.if{
+		width: 20px;
+	}
+} @else if $if1 == 30 {
+	.if{
+		width: 30px;
+	}
+} @else{
+	.if{
+		width: 10px;
+	}
+}
+
+@mixin btn{
+	display: inline-block;
+	padding: 10px 20px 10px 36px;
+	background-color: #9bc1bc;
+	color: white;
+	//text-decoration: none;
+	//text-transform: uppercase;
+	text:{
+		decoration: none;
+		transform: uppercase;
+	}
+	font-size: 0.8em;
+	font-family: "Helvetica", sans-serif;
+	border-radius: 4px;
+	&:hover{
+		opacity: 0.8;
+	}
+}
+
+$redes: (facebook, #3b5998), (twitter, #00aced), (gplus, #dd4b39);
+
+@each $red, $color in $redes{
+	.btn-#{$red}{
+		@include btn;
+		background: {
+			color: $color;
+			image: url('../img/icon-#{$red}.png');
+			position: 8px 50%;
+			repeat: no-repeat;
+			size:20px 20px;
+		}
+	}
+}
+//through llega hasta el ultimo numero
+//to llega hasta el ultimo - 1
+
+@for $i from 1 through 12{
+	.col#{$i}{
+		margin: 0 10px;
+		width: (60px * $i);
+
+	}
+}
+
+
+$e: 1;
+@while $e < 12 {
+	.pre#{$e}{
+		margin-left: (60px * $e) + (20px * $e);
+	}
+	$e: $e + 1;
+}

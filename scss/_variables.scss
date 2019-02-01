@@ -53,11 +53,14 @@ $lista: facebook, twitter, linkedin;
 
 //MAPAS
 
-// $mapa: (
-// 	clave: valor,
-// 	clave2: valor2
-// 	);
+$mapa: (
+	clave: 'valor',
+	clave2: 'valor2'
+	);
 
-// map-get($mapa, clave);
+.mapa{
+	conent: map-get($mapa, clave);	
+}
+
 //FALTA INVESTIGAR MAPAS
 
