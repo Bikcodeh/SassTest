@@ -56,7 +56,8 @@ p {
   padding: 10px;
   background-color: #e6ebe0;
   border-radius: 5px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  color: #444; }
 .box .head {
   border-bottom: 1px solid #9bc1bc;
   padding-bottom: 10px; }
@@ -65,5 +66,22 @@ p {
   color: #5ca4a9; }
 .box .cont {
   padding-top: 10px; }
+
+.box-grey {
+  padding: 15px;
+  background-color: #000;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  color: #fff; }
+
+.selector {
+  padding: 20px; }
+@media (min-width: 680px) and (max-width: 1024px) {
+  .selector {
+    padding: 10px; } }
+
+@media (min-width: 680px) and (max-width: 1024px) {
+  .selector {
+    padding: 20px; } }
 
 /*# sourceMappingURL=estilo.css.map */

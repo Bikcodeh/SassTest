@@ -9,7 +9,7 @@ $text: blue;
 }
 
 .box{
-	@include box;
+	@include box($box-radius, $box-bg, 20px);
 
 	.head{
 		border-bottom: 1px solid #9bc1bc;
@@ -24,6 +24,23 @@ $text: blue;
 	.cont{
 		padding-top: 10px;
 	}
-
-
 }
+
+.box-grey{
+	@include box(8px, #000, 30px);
+}
+
+.selector{
+
+	padding: 20px;
+	@include mq-tablet{
+		padding: 10px;
+	}
+}
+
+@include mq-tablet{
+	.selector{
+		padding: 20px;
+	}
+}
+
