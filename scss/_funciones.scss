@@ -1,0 +1,32 @@
+$fvar: 100px;
+//$fcolor: rgba(255, 255,255, 0.3);
+$fcolor: white;
+$color: rgba($fcolor, 0.3);
+
+.fsel{
+	width: if($fvar < 100px, $fvar, 100%);
+	background-color: $color;
+}
+
+@function lt($color, $valor: 10%){
+	@return mix(white, $color, $valor);
+}
+
+@function dk($color, $valor: 10%){
+	@return mix(black, $color, $valor);
+
+}
+
+.selector{
+	color: lt(green, 50%);
+}
+
+
+
+
+
+//mixin-exist()
+//function-exist($fvar)// true or false
+//variable-exist()
+
+//type-of($favar) para identificar que tipo de dato tiene
