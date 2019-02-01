@@ -1,0 +1,63 @@
+$text: #444;
+$font-family: "Helvetica", sans-serif;
+$title: #888;
+$title-font-family: "Georgia", serif;
+
+
+
+/*.selectorAlguno{
+
+	$size: 10px !global;
+	//Estamos declarando a size como global
+	//para que funcione en todo el archivo, tanto en este
+	//como en el que lo importen
+	//si no
+	font-size: $size;
+
+}*/
+
+$var: 3;
+$var: 6 !default;
+
+div{
+	content: $var;
+}
+
+
+$var: 1; // true
+$var: 0; // true
+$var: ''; // true
+$var: 'cadena'; // true
+$var: true; // true
+
+$var: null; // false
+$var: false; // false
+
+//INTERPOLACIONES
+
+$image: 'icon.png';
+
+p{
+	background-image: url('#{$image}');
+}
+
+//LISTAS
+
+$lista: facebook, twitter, linkedin;
+
+@each $item in $lista {
+	.icon-#{$item} {
+		background-image: url('#{$item}.png');
+	}
+}
+
+//MAPAS
+
+// $mapa: (
+// 	clave: valor,
+// 	clave2: valor2
+// 	);
+
+// map-get($mapa, clave);
+//FALTA INVESTIGAR MAPAS
+
